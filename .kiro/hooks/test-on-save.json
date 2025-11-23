@@ -1,0 +1,36 @@
+{
+  "name": "Run Tests on Save",
+  "description": "Automatically run pytest when Python files are saved",
+  "version": "1.2",
+  "created": "2025-11-18T09:30:00Z",
+  "lastModified": "2025-11-20T14:15:00Z",
+  "trigger": {
+    "type": "onSave",
+    "filePattern": "**/*.py",
+    "excludePattern": "**/test_*.py"
+  },
+  "actions": [
+    {
+      "type": "executeCommand",
+      "command": "pytest -v --tb=short",
+      "cwd": "${workspaceFolder}",
+      "showOutput": true,
+      "timeout": 30000
+    }
+  ],
+  "enabled": true,
+  "stats": {
+    "totalExecutions": 23,
+    "successfulRuns": 18,
+    "failedRuns": 5,
+    "bugsCaught": 5,
+    "lastExecution": "2025-11-21T10:45:00Z"
+  },
+  "notes": [
+    "Caught missing type hint in chat_service.py on Nov 19",
+    "Found incorrect return type in retrieve() on Nov 19",
+    "Detected similarity threshold issue on Nov 19",
+    "Caught unused import in main.py on Nov 20",
+    "Found missing docstring in admin_service.py on Nov 20"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Lint Python Code",
+  "description": "Run flake8 linter on Python files when saved",
+  "version": "1.0",
+  "created": "2025-11-18T09:30:00Z",
+  "lastModified": "2025-11-19T14:00:00Z",
+  "trigger": {
+    "type": "onSave",
+    "filePattern": "**/*.py"
+  },
+  "actions": [
+    {
+      "type": "executeCommand",
+      "command": "flake8 ${file} --max-line-length=100 --ignore=E501,W503",
+      "cwd": "${workspaceFolder}",
+      "showOutput": true
+    }
+  ],
+  "enabled": false,
+  "disabledReason": "Too noisy during rapid development. Disabled on Nov 19 after user feedback. Can be re-enabled for final polish.",
+  "stats": {
+    "totalExecutions": 12,
+    "lastExecution": "2025-11-19T13:45:00Z"
+  },
+  "notes": [
+    "User: 'The linter is too noisy. Can we disable it?'",
+    "Kiro: 'Yes, flake8 can be strict. Let's disable it and rely on the type checker and tests instead.'",
+    "Disabled on Nov 19, 2025 at 2:00 PM"
+  ]
+}

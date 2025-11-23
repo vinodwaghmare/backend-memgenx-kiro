@@ -1,0 +1,83 @@
+{
+  "project": {
+    "name": "Memory Layer Backend",
+    "type": "fastapi",
+    "language": "python",
+    "version": "1.0.0",
+    "category": "Frankenstein",
+    "hackathon": "Kiroween 2025",
+    "created": "2025-11-18T09:00:00Z",
+    "lastModified": "2025-11-21T10:00:00Z"
+  },
+  "kiro": {
+    "features": {
+      "vibe_coding": true,
+      "spec_driven": true,
+      "agent_hooks": true,
+      "steering_docs": true
+    },
+    "settings": {
+      "auto_format": true,
+      "auto_lint": false,
+      "auto_test": true,
+      "model": "gpt-4",
+      "temperature": 0.7
+    },
+    "usage": {
+      "totalSessions": 8,
+      "totalDuration": "8h 20m",
+      "linesGenerated": 2500,
+      "filesCreated": 15,
+      "promptsUsed": 15,
+      "timeSaved": "22h 40m"
+    }
+  },
+  "development": {
+    "python_version": "3.11",
+    "virtual_env": "venv",
+    "test_framework": "pytest",
+    "linter": "flake8",
+    "type_checker": "mypy",
+    "formatter": "black"
+  },
+  "metrics": {
+    "code_quality": {
+      "type_coverage": "100%",
+      "test_coverage": "85%",
+      "documentation": "complete",
+      "security_score": "9/10"
+    },
+    "agent_hooks": {
+      "test_on_save": {
+        "executions": 23,
+        "bugs_caught": 5
+      },
+      "security_scan": {
+        "executions": 8,
+        "issues_found": 7
+      }
+    }
+  },
+  "timeline": [
+    {
+      "date": "2025-11-18",
+      "sessions": 2,
+      "tasks": ["Project setup", "JWT authentication"]
+    },
+    {
+      "date": "2025-11-19",
+      "sessions": 2,
+      "tasks": ["FAISS vector store", "Rate limiting"]
+    },
+    {
+      "date": "2025-11-20",
+      "sessions": 3,
+      "tasks": ["FastAPI app", "Admin service", "Testing"]
+    },
+    {
+      "date": "2025-11-21",
+      "sessions": 1,
+      "tasks": ["Documentation", "Final polish"]
+    }
+  ]
+}
